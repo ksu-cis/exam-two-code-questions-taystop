@@ -7,6 +7,13 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TextBlock>Customize Cobbler</TextBlock>
+        <ListBox>
+            <TextBlock FontSize="30">Customize Cobbler</TextBlock>
+            <TextBlock FontSize="20" FontWeight="Bold">Filling</TextBlock>
+            <Button x:Name="CherryBtn" Content="Cherry" FontSize="30" Click="CherryBtn_Click"/>
+            <Button x:Name="BlueberryBtn" Content="Blueberry" FontSize="30" Click="BlueberryBtn_Click"/>
+            <Button x:Name="PeachBtn" Content="Peach" FontSize="30" Click="PeachBtn_Click"/>
+            <CheckBox x:Name="WithIceCreamCheck" IsChecked="{Binding Path=WithIceCream}" Content="WithIceCream" FontSize="40"/>
+        </ListBox>
     </Grid>
 </UserControl>
